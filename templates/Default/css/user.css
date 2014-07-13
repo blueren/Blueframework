@@ -1,0 +1,39 @@
+.isread{
+    background-color:aliceblue;
+    color:#FF9933;
+}
+
+.unread{
+    color:#FFFFFF;
+	font-weight:bolder;
+    background-color:#B8CDE8;
+}
+
+table.mbsgbox{
+    width:100%;
+}
+
+td.mbsender{
+    min-width:100px;
+}
+td.mbdate{
+    min-width:180px;
+}
+td.mbtitle{
+    width:100%
+}
+.mbmsg{
+    color:#DDD;
+}
+
+#rdmore{
+    max-width:500px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+

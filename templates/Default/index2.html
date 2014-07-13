@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="zh-TW" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Responsive Design (Media Queries) 頁面設計範例</title> 
+<style type="text/css">
+
+/* 預設版面的CSS設定*/
+body 
+{
+	background-color: #777;
+}
+.wrap 
+{
+	background-color: #FFF;
+	border: solid 1px #666;	
+	padding: 5px 10px;
+	margin: 10px;
+}
+.article 
+{
+	background-color: #E9E5C0;
+	line-height: 150%;
+}
+.aside 
+{
+	background-color: #F8D3D0;
+}
+
+.nav ul
+{
+	list-style:none;
+}
+.nav ul li
+{
+	padding-right: 20px;
+	display:inline;
+}
+ 
+/* 當版面寬度小於600px時，會套用此段css */
+@media screen and (max-width: 600px) 
+{
+	.w600
+	{
+		background: #F9C;
+	}
+	.nav ul li
+	{
+		display:block;
+	}
+}
+ 
+/* 當版面寬度大於900px時，會套用此段css */
+@media screen and (min-width: 900px) {
+	.w900
+	{
+		background: #F90;
+	}
+	.aside 
+	{
+		width: 20%;
+		float:right;
+	}
+	.article 
+	{
+		width: 70%;
+		float:left;
+	}
+}
+ 
+/* 當版面寬度介於600~900px原，會套用此段css */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.w600-900
+	{
+		background: #9CF;
+	}
+	span.bt600-900 {
+		display: inline-block;
+	}
+}
+ 
+/* 當使用最大寬解析度為480px的行動裝置瀏覽此頁時，會套用此段css。
+註：智慧型手機目前常見最大寬度為 480px，如iPhone or Android Phone*/
+@media screen and (max-device-width: 480px) 
+{
+	.handset 
+	{
+		background: #ccc;
+	}
+}
+</style> 
+</head> 
+ 
+<body>
+	<header class="wrap">
+	  <h1>Responsive Design (Media Queries)頁面設計範例</h1>
+	  目前頁寬：
+	  <span class="handset">Handset</span>
+	  <span class="w600"><600px</span>
+	  <span class="w600-900">600-900px</span>
+	  <span class="w900">>900px</span>
+	</header>
+
+	<nav class="wrap nav">
+	  <ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/">Products</a></li>
+		<li><a href="/">Services</a></li>
+		<li><a href="/">About</a></li>
+	  </ul>
+	</nav>
+	
+	<article class="wrap article">
+		<section>
+		  <h1>使用說明：</h1>
+		  <p>您可以試著調整瀏覽器的寬度來驗證此頁的Liquid效果，說明如下：
+				<ul>
+					<li class="w900">寬度大於900像素：為預設版面。</li>
+					<li class="w600-900">寬度介於600~900像素：右方側邊欄會調整至下方，成為滿版。</li>
+					<li class="w600">寬度小於600像素：上方導覽列的連結，會排成直式。
+				</ul>
+		  </p>
+		  <p>本頁示範以 HTML5語法 + CSS3的media queries 構成十分具有彈性的Liquid Layout頁面設計，不過萬惡的IE8以下並不支援，所以需要動一點手腳...XD
+			 ...</p>
+		</section>
+	</article>
+	
+	<aside class="wrap aside">
+	  <h1>Archives</h1>
+	  <ul class="archive">
+		<li><a href="/2011/03">March 2011</a></li>
+		<li><a href="/2011/04/">April 2011</a></li>
+		<li><a href="/2011/05/">May 2011</a></li>
+	  </ul>
+
+	</aside>
+	<div style="clear:both"></div>
+	
+	<footer class="wrap">
+		2011 由<a href="http://mrmu.com.tw">MRMU</a>製作
+	</footer>
+</body> 
+</html> 

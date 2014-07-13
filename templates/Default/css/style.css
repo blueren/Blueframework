@@ -1,0 +1,204 @@
+/* 預設版面的CSS設定*/
+html, body 
+{
+	background-color: #EEE;
+    padding-top: 60px;
+    background: url('../images/bg.gif');
+}
+
+audio {
+   margin-top: 10px;
+   width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+/*	--------------------------------------------------
+	:: form-signin
+	-------------------------------------------------- */
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+	.form-signin  > input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	.form-signin  > input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+/*	--------------------------------------------------
+	:: Links
+	-------------------------------------------------- */
+	a { color: #2a85e8; text-decoration: none; line-height: inherit; }
+	a:hover { color: #11639d; }
+	a:focus { color: #cc4714; outline: none; }
+	p a, p a:visited { line-height: inherit; }
+	
+
+/*	--------------------------------------------------
+	:: Lists
+	-------------------------------------------------- */
+	ul, ol { margin-bottom: 18px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	li { margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	
+
+/*	--------------------------------------------------
+	:: Tables
+	-------------------------------------------------- */
+	table { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 18px; border: 1px solid #ddd;  }
+	
+	table thead, table tfoot { background: #f5f5f5; }
+	table thead tr th,
+	table tfoot tr th,
+	table tbody tr td,
+	table tr td,
+	table tfoot tr td { font-size: 12px; line-height: 18px; text-align: left; }
+	table thead tr th,
+	table tfoot tr td { padding: 8px 10px 9px; font-size: 14px; font-weight: bold; color: #222; }
+	table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+	table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+
+	table tbody tr.even,
+	table tbody tr.alt { background: #f9f9f9; }
+	table tbody tr:nth-child(even) { background: #f9f9f9; }
+	table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border: none; }
+
+/* -------------------------------------------------- 
+	:: Misc
+---------------------------------------------------*/
+	.left        { float: left; }
+	.right       { float: right; }
+	.text-left   { text-align: left; }
+	.text-right  { text-align: right; }
+	.text-center { text-align: center; }
+	.hide        { display: none; }
+	.highlight   { background: #ff0; }
+    
+/* 首頁上方跑馬燈*/
+#home-slider {
+            
+    margin: 0 -15px 10px -15px;
+    height: 200px;
+}
+#home-slider img {
+    width: 100%;
+    display:block; 
+    margin:auto;
+}
+/* 首頁影片*/
+.video {
+
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container
+{
+    background-color: rgba(100%, 100%, 100%, 0.6);    
+}
+.theme-showcase
+{
+    margin-top: 10px;
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+}
+.main
+{
+    overflow:auto;
+    height:80%;    
+}
+.wrap 
+{
+	/* border: solid 1px #666;	 */
+}
+
+
+@media(min-width:768px){
+.aside-collapse{width:auto;border-top:0;box-shadow:none}
+.aside-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}
+.aside-collapse.in{overflow-y:visible}
+}
+/* 當版面寬度小於600px時，會套用此段css */
+@media screen and (max-width: 768px) 
+{
+	.nav ul li
+	{
+		display:block;
+	}
+}
+ 
+/* 當版面寬度大於900px時，會套用此段css */
+@media screen and (min-width: 992px) {
+	.aside 
+	{
+        padding-top: 15px;
+		width: 20%;
+		float:right;
+	}
+	.article 
+	{
+        padding-top: 15px;
+		width: 75%;
+		float:left;
+	}
+}
+ 
+/* 當版面寬度介於600~900px原，會套用此段css */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+ 
+/* 當使用最大寬解析度為480px的行動裝置瀏覽此頁時，會套用此段css。
+註：智慧型手機目前常見最大寬度為 480px，如iPhone or Android Phone*/
+@media screen and (max-device-width: 768px) 
+{
+
+}

@@ -1,0 +1,63 @@
+.img2{
+    float: right;
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 5px;
+}
+.img3{
+    border: 1px solid #eee;
+    margin: 10px;
+    padding: 5px;
+}
+.controls{
+	display: inline-block;
+	width: 180px;
+	margin: 0 0 30px;
+	vertical-align: top;
+}
+
+.controls li{
+	margin-left: 20px;
+	cursor: pointer;
+	list-style-type: square;
+}
+
+.controls li.active{
+	font-weight: 700;
+}
+
+hr{
+	margin: 0 0 30px;
+	height: 0;
+	border: 0 none;
+	border-top: 1px solid #eee;
+}
+
+#Grid{
+	width: 640px;
+    float: right;
+	text-align: justify;
+}
+
+#Grid:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+#Grid .mix{
+	display: none;
+	opacity: 0;
+	width: 130px;
+	height: 130px;
+	vertical-align: top;
+	margin-bottom: 20px;
+	background: #ccc;
+	text-align: center;
+	line-height: 15px;
+}
+
+#Grid .gap{
+	display: inline-block;
+	width: 200px;
+}

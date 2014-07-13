@@ -1,0 +1,41 @@
+<!--Dump-->
+{{if $type=='dump'}}
+<pre>
+{{$obj|@print_r}}
+</pre>
+{{/if}}
+
+<!--Login-->
+{{if $type=='add'}}
+<form method='POST' action='?mod=gbook&act=doadd'>
+<p>姓名: <input type='text' name='name' /></p>
+<p>內容: <textarea name='content'></textarea></p>
+<p><input type='submit' value='送出' /></p>
+</form>
+{{/if}}
+
+{{if $type=='update'}}
+<form method='POST' action='?mod=gbook&act=doupd&id={{$obj->id}}'>
+<p>姓名: <input type='text' name='name' value='{{$obj->name}}'/></p>
+<p>內容: <textarea name='content'>{{$obj->content}}</textarea></p>
+<p><input type='submit' value='送出' /></p>
+</form>
+{{/if}}
+
+
+<!--UserPanel-->
+{{if $type=='display'}}
+<form method='POST' action='?mod=gbook&act=doadd'>
+<p>姓名: <input type='text' name='name' /></p>
+<p>內容: <textarea name='content'></textarea></p>
+<p><input type='submit' value='送出' /></p>
+</form>
+{{section name=i loop=$obj}}
+<p>{{$obj[i]->name}}</p>
+<p>{{$obj[i]->content}}</p>
+<p>{{$obj[i]->updatetime}}</p>
+<p><a href='?mod=gbook&act=upd&id={{$obj[i]->id}}'>修改</a>&nbsp;<a href='?mod=gbook&act=dodel&id={{$obj[i]->id}}'>刪除</a></p>
+<hr>
+{{/section}}
+
+{{/if}}

@@ -1,0 +1,111 @@
+/* 預設版面的CSS設定*/
+html, body 
+{
+	background-color: #EEE;
+    background: url('../images/bg.gif');
+}
+
+audio {
+   margin-top: 10px;
+   width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+/* 首頁上方跑馬燈*/
+#home-slider {
+            
+    margin: 0 -15px 10px -15px;
+    height: 200px;
+}
+#home-slider img {
+    width: 100%;
+    display:block; 
+    margin:auto;
+}
+/* 首頁影片*/
+.video {
+    padding: 0 5px 0 15px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.container
+{
+    background-color: rgba(100%, 100%, 100%, 0.6);   
+
+}
+.theme-showcase
+{
+    padding-top: 10px;    
+    -webkit-box-shadow: 1px 1px 29px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    1px 1px 29px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         1px 1px 29px 0px rgba(50, 50, 50, 0.75);
+}
+.wrap 
+{
+	/* border: solid 1px #666;	 */
+}
+.aside 
+{
+
+}
+/* 當版面寬度小於600px時，會套用此段css */
+@media screen and (max-width: 600px) 
+{
+	.nav ul li
+	{
+		display:block;
+	}
+}
+ 
+/* 當版面寬度大於900px時，會套用此段css */
+@media screen and (min-width: 900px) {
+	.aside 
+	{
+		width: 20%;
+		float:right;
+	}
+	.article 
+	{
+		width: 70%;
+		float:left;
+	}
+}
+ 
+/* 當版面寬度介於600~900px原，會套用此段css */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+	span.bt600-900 {
+		display: inline-block;
+	}
+}
+ 
+/* 當使用最大寬解析度為480px的行動裝置瀏覽此頁時，會套用此段css。
+註：智慧型手機目前常見最大寬度為 480px，如iPhone or Android Phone*/
+@media screen and (max-device-width: 480px) 
+{
+	.handset 
+	{
+		background: #ccc;
+	}
+}

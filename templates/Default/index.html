@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    
+    <!-- jQuery (使用Bootstrap的JavaScript外掛) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- 在下面加入所有已編譯外掛，或是當需要時加入獨立檔案 -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.pause.js"></script>
+    <script type="text/javascript" src="js/jquery.cross-slide.js"></script>  
+    
+	<link href="css/screen.css" rel="stylesheet" type="text/css" /> 
+
+	<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+    
+    <!-- HTML5 shim 和 Respond.js 讓IE8支援HTML5元素和媒體查詢 -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    
+<script type="text/javascript">
+	$(function() {
+		// 使用滑動式的輪播
+		$('#home-slider').crossSlide({
+			speed: 30,
+			fade: 1
+		}, [
+			{ src: 'images/Chrysanthemum.jpg', dir: 'up' },
+			{ src: 'images/Desert.jpg', dir: 'down' },
+			{ src: 'images/Hydrangeas.jpg', dir: 'right' },
+			{ src: 'images/Koala.jpg', dir: 'left' },
+			{ src: 'images/Lighthouse.jpg', dir: 'up' }
+		]);
+		
+	});
+</script> 
+  
+  </head>
+  
+	<body>
+		   
+    
+<div id="video-wrapper-stop" class="clearfix">
+	<header class="wrap">
+        <div class="navbar navbar-default navbar-fixed-top animated slideInLeft" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Div Studio</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">System Design</a></li>
+                    <li><a href="#">System Assessing</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Graphic Design</li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Layout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>    
+	</header>
+    <div class="container theme-showcase animated slideInDown" role="main">
+        <div id="home-slider">Loading...</div>         
+	<article class="wrap article">
+
+        <section>
+            <div class="row">
+                <div class="col-md-7 video">
+                    <div class="video-container">
+                             <iframe src="http://www.youtube.com/embed/dFVxGRekRSg" frameborder="0" width="560" height="315"></iframe>
+                    </div>            
+                </div>
+                <div class="col-md-5">
+                    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                      <li class=""><a href="#profile" data-toggle="tab">Profile</a></li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                          Dropdown <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                      <div class="tab-pane fade active in" id="home">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                      </div>
+                      <div class="tab-pane fade" id="profile">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                      </div>
+                      <div class="tab-pane fade" id="dropdown1">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                      </div>
+                      <div class="tab-pane fade" id="dropdown2">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                      </div>
+                    </div>
+                </div>
+
+            </div>    
+            <div class="row">
+                <div class="col-md-4">
+                  <h2>Something Here</h2>
+                  <p>The PHP development team announces the immediate availability of PHP 5.4.26. 5 bugs were fixed in this release, including CVE-2014-1943. All PHP 5.4 users are encouraged to upgrade to this version.
+
+For source downloads of PHP 5.4.26 please visit our downloads page, Windows binaries can be found on windows.php.net/download/. The list of changes is recorded in the ChangeLog.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details ?</a></p>        
+                </div>
+                <div class="col-md-4">
+                  <h2>Something Here</h2>
+                  <p>The PHP development team announces the immediate availability of PHP 5.4.26. 5 bugs were fixed in this release, including CVE-2014-1943. All PHP 5.4 users are encouraged to upgrade to this version.
+
+For source downloads of PHP 5.4.26 please visit our downloads page, Windows binaries can be found on windows.php.net/download/. The list of changes is recorded in the ChangeLog.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details ?</a></p>
+                </div>
+                <div class="col-md-4">
+                  <h2>Something Here</h2>
+                  <p>The PHP development team announces the immediate availability of PHP 5.4.26. 5 bugs were fixed in this release, including CVE-2014-1943. All PHP 5.4 users are encouraged to upgrade to this version.
+
+For source downloads of PHP 5.4.26 please visit our downloads page, Windows binaries can be found on windows.php.net/download/. The list of changes is recorded in the ChangeLog.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details ?</a></p>
+                </div>
+            </div>            
+        </section>        
+	</article>
+	<aside class="wrap aside">
+        <h1>Sidebar</h1>
+        <div class="list-group">
+        <a href="#" class="list-group-item active">
+          list0
+        </a>
+        <a href="#" class="list-group-item">list1</a>
+        <a href="#" class="list-group-item">list2</a>
+        <a href="#" class="list-group-item">list3</a>
+        <a href="#" class="list-group-item">list4</a>
+        </div>
+
+        <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+        <input type="password" class="form-control" placeholder="Password" required="">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>  
+        <audio controls loop src="song.ogg">Your browser does not support the audio element.</audio>
+	</aside>
+    
+	<div style="clear:both"></div>
+    
+    <div id="footer">
+        <p class="text-muted">Design by BlueRen.</p>
+    
+    </div>
+    
+    </div>
+
+</div>    
+	   
+
+        
+  </body>
+</html>
